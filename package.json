@@ -4,7 +4,7 @@
   "description": "Unofficial Sanity Astro integration",
   "scripts": {
     "dev": "vite build --watch",
-    "build": "rimraf dist && vite build",
+    "build": "vite build",
     "prepublishOnly": "npm run build",
     "preinstall": "npm run build"
   },
