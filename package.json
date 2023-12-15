@@ -1,0 +1,61 @@
+{
+  "name": "sanity-astro",
+  "version": "0.0.1",
+  "description": "Unofficial Sanity Astro integration",
+  "scripts": {
+    "dev": "vite build --watch",
+    "build": "rimraf dist && vite build",
+    "prepublishOnly": "npm run build",
+    "preinstall": "npm run build"
+  },
+  "files": [
+    "dist",
+    "module.d.ts",
+    "vite.config.ts",
+    "src"
+  ],
+  "module": "./dist/sanity-astro.js",
+  "exports": {
+    ".": {
+      "types": "./dist/types/index.d.ts",
+      "module": "./dist/sanity-astro.js",
+      "default": "./dist/sanity-astro.mjs"
+    },
+    "./module": "./module.d.ts"
+  },
+  "types": "./dist/types/index.d.ts",
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/doesnotexist/sanity-astro.git"
+  },
+  "author": "Omar El-Domeiri <github@doesnotexist.com>",
+  "license": "MIT",
+  "keywords": [
+    "astro-integration",
+    "withastro",
+    "sanity"
+  ],
+  "engines": {
+    "node": ">=18.14.1",
+    "npm": ">=6.14.0"
+  },
+  "dependencies": {
+    "@sanity/client": "^6.10.0",
+    "sanity": "*"
+  },
+  "devDependencies": {
+    "astro": "^4.0.5",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "rimraf": "^5.0.5",
+    "vite": "^5.0.10",
+    "vite-plugin-dts": "^3.6.4"
+  },
+  "peerDependencies": {
+    "@sanity/client": "^6.10.0",
+    "astro": "^2.0.0 || ^3.0.0 || ^4.0.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "sanity": "*"
+  }
+}
