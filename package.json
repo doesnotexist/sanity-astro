@@ -41,15 +41,15 @@
   },
   "dependencies": {
     "@sanity/client": "^6.10.0",
-    "sanity": "*",
-    "rimraf": "^5.0.5",
-    "vite": "^5.0.10",
-    "vite-plugin-dts": "^3.6.4"
+    "sanity": "*"
   },
   "devDependencies": {
     "astro": "^4.0.5",
     "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "react-dom": "^18.2.0",
+    "rimraf": "^5.0.5",
+    "vite": "^5.0.10",
+    "vite-plugin-dts": "^3.6.4"
   },
   "peerDependencies": {
     "@sanity/client": "^6.10.0",
